@@ -21,7 +21,7 @@ function App() {
             <Contacts />
       <div className="wrapper">
         <Fade>
-          <div clasName="container">
+          <div className="container">
             <img className="headerImg" src={lineDot} alt="divider"/>
             <h1>
               hi, i'm <span data-text="carolina" className="name" >carolina</span>

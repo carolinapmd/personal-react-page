@@ -27,16 +27,18 @@
   }
 }
 
-.Did .roleOption a {
+.Did .roleOption button {
   color: #848484;
+  background: none;
+  border: none;
 }
 
-.Did .roleOption a:hover {
+.Did .roleOption button:hover {
   text-decoration: none;
   color: #41749b;
 }
 
-.Did .roleOption a.active {
+.Did .roleOption button.active {
   font-size: 22px;
   font-style: bold;
   color: #387098;
