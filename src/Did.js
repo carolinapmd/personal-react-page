@@ -24,7 +24,7 @@ export default function Did(){
             i did <span className="this">this</span>
             </h2>
             <span className="roleOption">
-              <a className="active" href="" onClick={showCivilPortfolio}>as a civil engineer</a> | <a href="" onClick={showDevPortfolio}>as a developer</a>
+              <a className="active" href="#" onClick={showCivilPortfolio}>as a civil engineer</a> | <a href="" onClick={showDevPortfolio}>as a developer</a>
               </span>
             <div className="CardGroup row">
             <PortfolioCard role="civil"/>
@@ -42,7 +42,7 @@ export default function Did(){
                     i did <span className="this">this</span>
                     </h2>
                     <span className="roleOption">
-                      <a href="" onClick={showCivilPortfolio}>as a civil engineer</a> | <a href="" className="active" onClick={showDevPortfolio}>as a developer</a>
+                      <a href="" onClick={showCivilPortfolio}>as a civil engineer</a> | <a href="#" className="active" onClick={showDevPortfolio}>as a developer</a>
                       </span>
                     <div className="CardGroup row">
                     <PortfolioCard role="dev"/>
