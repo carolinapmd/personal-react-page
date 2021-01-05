@@ -14,6 +14,7 @@
     "@testing-library/user-event": "^12.6.0",
     "aos": "^2.3.4",
     "bootstrap": "^4.5.3",
+    "firebase": "^8.2.1",
     "font-awesome": "^4.7.0",
     "keen-slider": "^5.3.5",
     "react": "^17.0.1",

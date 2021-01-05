@@ -2,4 +2,32 @@
   min-width: 300px;
   max-width: 500px;
   margin: 0 auto;
+  text-align: right;
+}
+
+.ContactForm h3 {
+  font-size: calc(5vw + 2vmin);
+}
+
+.ContactForm .emphasis:hover {
+  color: #fff948;
+  transition: 600ms ease-in-out;
+}
+
+.ContactForm .form .nameInput,
+.emailInput,
+.messageInput {
+  background: rgba(196, 196, 196, 0.19);
+  border-radius: 15px;
+  border: none;
+  margin: 5px;
+  font-size: 15px;
+}
+
+.ContactForm button {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 15px;
+  font-size: 15px;
+  border: none;
+  width: 100px;
 }
