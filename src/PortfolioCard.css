@@ -1,0 +1,8 @@
+.PortfolioCard {
+  min-width: 300px;
+  margin: 5px;
+}
+
+.PortfolioCard .card {
+  background-color: rgba(255, 255, 255, 0.156);
+}

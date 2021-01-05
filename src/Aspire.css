@@ -1,0 +1,52 @@
+.Aspire {
+  text-align: center;
+  margin: 50px;
+}
+
+.Aspire h2 {
+  font-size: calc(6vw + 2vmin);
+}
+
+.Aspire .this:hover {
+  color: #31ae97;
+  transition: 600ms ease-in-out;
+  position: relative;
+  animation: text 3s 1;
+}
+.Aspire .emphasis:hover {
+  color: #31ae97;
+  transition: 600ms ease-in-out;
+  position: relative;
+}
+
+@keyframes text {
+  0% {
+    color: #282c34;
+    letter-spacing: 8px;
+  }
+  30% {
+    letter-spacing: 15px;
+  }
+  85% {
+    letter-spacing: 8px;
+  }
+}
+
+.Aspire .statement {
+  margin-top: 50px;
+  font-size: calc(1vw + 2vmin);
+  font-style: italic;
+}
+
+.roles {
+  font-size: calc(2vw + 2vmin);
+}
+
+.Aspire h4 {
+  margin-top: 100px;
+}
+
+.Aspire hr {
+  background-color: #dddddf;
+  border: 6px solid #dddddf;
+}

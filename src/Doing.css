@@ -1,0 +1,33 @@
+.Doing {
+  text-align: right;
+  margin-top: 50px;
+}
+
+.Doing h2 {
+  font-size: calc(6vw + 2vmin);
+}
+
+.Doing .Caroussel {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.Doing .this:hover {
+  color: #6e9e31;
+  transition: 600ms ease-in-out;
+  position: relative;
+  animation: text 3s 1;
+}
+
+@keyframes text {
+  0% {
+    color: #282c34;
+    letter-spacing: 8px;
+  }
+  30% {
+    letter-spacing: 15px;
+  }
+  85% {
+    letter-spacing: 8px;
+  }
+}

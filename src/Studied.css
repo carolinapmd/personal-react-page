@@ -1,0 +1,28 @@
+.Studied {
+  text-align: left;
+}
+
+.Studied h2 {
+  font-size: calc(6vw + 2vmin);
+  clear: left;
+}
+
+.Studied .this:hover {
+  color: rgb(255, 109, 145);
+  transition: 600ms ease-in-out;
+  position: relative;
+  animation: text 3s 1;
+}
+
+@keyframes text {
+  0% {
+    color: #282c34;
+    letter-spacing: 8px;
+  }
+  30% {
+    letter-spacing: 15px;
+  }
+  85% {
+    letter-spacing: 8px;
+  }
+}

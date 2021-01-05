@@ -1,0 +1,20 @@
+.Contacts {
+  font-size: 20px;
+  color: white;
+  padding: 10px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(255, 255, 255, 0.207);
+  border-radius: 10px;
+  max-width: fit-content;
+}
+
+.Contacts .contactIcon {
+  display: block;
+  color: white;
+}
+.Contacts .contactIcon:hover {
+  color: rgb(175, 175, 175);
+}

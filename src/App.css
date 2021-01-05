@@ -1,0 +1,55 @@
+.App {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+.App .wrapper {
+  margin: 20px 8vw;
+}
+
+.App .headerImg {
+  width: calc(60% + 5vmin);
+  position: absolute;
+  right: 0;
+  top: 45px;
+  margin: 0 auto;
+}
+icon {
+  width: 300px;
+}
+
+h1 {
+  font-size: calc(9vw + 1vmin);
+}
+
+.name:hover {
+  color: rgb(255, 255, 109);
+  transition: 600ms ease-in-out;
+  position: relative;
+  animation: text 3s 1;
+}
+
+@keyframes text {
+  0% {
+    color: #282c34;
+    letter-spacing: 8px;
+  }
+  30% {
+    letter-spacing: 25px;
+  }
+  85% {
+    letter-spacing: 8px;
+  }
+  100% {
+    letter-spacing: normal;
+  }
+}
+
+.App .line4Dot {
+  width: calc(60% + 5vmin);
+  float: left;
+  margin: 0 auto 20px 0;
+}

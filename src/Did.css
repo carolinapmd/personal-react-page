@@ -1,0 +1,43 @@
+.Did {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.Did h2 {
+  font-size: calc(6vw + 2vmin);
+}
+
+.Did .this:hover {
+  color: #337fb7;
+  transition: 600ms ease-in-out;
+  position: relative;
+  animation: text 3s 1;
+}
+
+@keyframes text {
+  0% {
+    color: #282c34;
+    letter-spacing: 8px;
+  }
+  30% {
+    letter-spacing: 15px;
+  }
+  85% {
+    letter-spacing: 8px;
+  }
+}
+
+.Did .roleOption a {
+  color: #848484;
+}
+
+.Did .roleOption a:hover {
+  text-decoration: none;
+  color: #41749b;
+}
+
+.Did .roleOption a.active {
+  font-size: 22px;
+  font-style: bold;
+  color: #387098;
+}

@@ -1,0 +1,31 @@
+.ProfilePicture {
+  text-align: right;
+  padding: 0 2vw;
+  height: 400px;
+}
+
+.ProfilePicture h2 {
+  font-size: calc(6vw + 2vmin);
+}
+
+.ProfilePicture .profileText {
+  font-size: 30px;
+}
+
+.ProfilePicture img {
+  width: 70%;
+  height: auto;
+  max-width: 400px;
+  border-radius: 360px;
+  display: block;
+  float: right;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+.ProfilePicture .description {
+  font-size: 2vw;
+}
+
+.ProfilePicture .description span {
+  font-size: 3vw;
+}
