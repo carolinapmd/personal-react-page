@@ -1,6 +1,7 @@
 .PortfolioCard {
   min-width: 300px;
   margin: 5px;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 .PortfolioCard .card {

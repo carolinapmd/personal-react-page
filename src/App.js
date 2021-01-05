@@ -22,12 +22,12 @@ function App() {
       <div className="wrapper">
         <Fade>
           <div clasName="container">
-            <img className="headerImg" src={lineDot}/>
+            <img className="headerImg" src={lineDot} alt="divider"/>
             <h1>
               hi, i'm <span data-text="carolina" className="name" >carolina</span>
             </h1>
             <ProfilePicture />
-            <img className="line4Dot" src={line4Dot}/>
+            <img className="line4Dot" src={line4Dot} alt="divider"/>
             <Studied/>
             <Did/>
             <Doing/>

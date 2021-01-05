@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import "./Contacts.css"
 import { FaGithub, FaWhatsapp, FaTelegramPlane,  FaLinkedinIn} from 'react-icons/fa';
 import { SiGmail} from 'react-icons/si';

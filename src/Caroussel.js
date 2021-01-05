@@ -25,7 +25,6 @@ export default (props) => {
           <div className="keen-slider__slide number-slide3">{props.slideThree}</div>
           <div className="keen-slider__slide number-slide4">{props.slideFour}</div>
           <div className="keen-slider__slide number-slide5">{props.slideFive}</div>
-          <div className="keen-slider__slide number-slide6">{props.slideSix}</div>
         </div>
         {slider && (
           <>
