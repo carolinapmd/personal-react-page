@@ -79,3 +79,7 @@
 .arrow--disabled {
   fill: rgba(255, 255, 255, 0.5);
 }
+
+.Caroussel img.OSPortfolio {
+  height: 250px;
+}
