@@ -58,8 +58,17 @@ useEffect(() => {
 
             </div>
             <hr/>
-            <p className="coderNote">This <a href="https://github.com/carolinapmd/personal-react-page" target="_blank" rel="noreferrer">website</a> was built by <a href="https://www.linkedin.com/in/carolina-domingues/" target="_blank" rel="noreferrer">Carolina Domingues</a>, with React. 💻</p>
-            
+            <div className="row">
+              <div className="col">
+            <p className="coderNote">This React website is <a href="https://github.com/carolinapmd/personal-react-page" target="_blank" rel="noreferrer">open-sourced</a> and was built by <a href="https://www.linkedin.com/in/carolina-domingues/" target="_blank" rel="noreferrer">Carolina Domingues</a>. 💻</p>
+                              </div>
+              <div className="col">
+            <p className="updatedDate">
+             ◽ January 2020 ◽ 
+            </p>
+
+              </div>
+            </div>
           </div>
       
       </div>

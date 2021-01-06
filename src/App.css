@@ -53,12 +53,17 @@ h1 {
   }
 }
 
-
 .App .coderNote {
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .App .coderNote a {
   color: rgb(189, 189, 189);
   font-style: bold;
+}
+
+.App .updatedDate {
+  display: inline-block;
+  float: right;
+  font-size: 12px;
 }
