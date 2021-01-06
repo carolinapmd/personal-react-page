@@ -55,7 +55,7 @@ return (
                 <input className="form-control nameInput" placeholder="(your full name)" value={name} onChange={handleNameChange} />
                 <input type="email" className="form-control emailInput" placeholder="(your email)" value={email} onChange={handleEmailChange} />
                 <textarea className="form-control messageInput" placeholder="(your message)" value={message} onChange={handleMessageChange}  rows="4"></textarea>
-                <button type="submit" className="btn btn-primary" style={{ background: loader ? "red" : "grey"}}>send</button>
+                <button type="submit" className="btn btn-light" style={{ background: loader ? "none" : "#cecece"}}>send</button>
             </form>
         </div>
             
