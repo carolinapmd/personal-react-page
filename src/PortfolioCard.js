@@ -1,6 +1,5 @@
 import React from "react";
 import "./PortfolioCard.css"
-import { FaGithub } from "react-icons/fa";
 
 export default function PortfolioCard(props){
 
