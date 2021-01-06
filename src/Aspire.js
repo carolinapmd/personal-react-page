@@ -6,7 +6,7 @@ export default function Aspire(){
       return (  
         <div className="Aspire" >
             <h2  >
-            and i aspire to <span className="this">achieve</span>
+            <small>and</small> i aspire to <span className="this">achieve</span>
             </h2>
          <div className="statement">
            <p>
@@ -19,7 +19,7 @@ export default function Aspire(){
            </p>
          </div>
          
-         <h4>Take part of this journey.</h4>
+         <h4>would love to hear your thoughts.</h4>
          <hr/>
         </div>
       )            

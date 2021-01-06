@@ -1,5 +1,12 @@
 .Studied {
   text-align: left;
+  margin-top: 80px;
+}
+
+.Studied .line4Dot {
+  width: calc(60% + 5vmin);
+  float: left;
+  margin: 0 auto 20px -8vw;
 }
 
 .Studied h2 {

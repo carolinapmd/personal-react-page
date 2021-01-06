@@ -7,7 +7,12 @@
   font-family: "Roboto", sans-serif;
 }
 .App .wrapper {
-  margin: 20px 8vw;
+  margin: 20px 50px;
+  min-width: 620px;
+}
+
+.App div.container {
+  min-width: 620px;
 }
 
 .App .headerImg {
@@ -22,7 +27,7 @@ icon {
 }
 
 h1 {
-  font-size: calc(9vw + 1vmin);
+  font-size: 7vw;
 }
 
 .name:hover {
@@ -38,7 +43,7 @@ h1 {
     letter-spacing: 8px;
   }
   30% {
-    letter-spacing: 25px;
+    letter-spacing: 15px;
   }
   85% {
     letter-spacing: 8px;
@@ -48,8 +53,12 @@ h1 {
   }
 }
 
-.App .line4Dot {
-  width: calc(60% + 5vmin);
-  float: left;
-  margin: 0 auto 20px -8vw;
+
+.App .coderNote {
+  font-size: 10px;
+}
+
+.App .coderNote a {
+  color: rgb(189, 189, 189);
+  font-style: bold;
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import Caroussel from "./Caroussel"
+import line4Dot from "./img/line4Dot.png"
 
 
 import "./Studied.css"
@@ -44,7 +45,9 @@ export default function Studied(){
 
       return (  
         <div className="Studied" >
- 
+          <div className="dividerLine">
+                      <img className="line4Dot" src={line4Dot} alt="divider"/>
+          </div> 
             <h2 >
             i studied <span className="this">this</span>            
             </h2>
@@ -53,9 +56,9 @@ export default function Studied(){
                 <Caroussel slideOne={One} slideTwo={Two} slideThree={Three} slideFour={Four} slideFive={Five} slideSix="null" />
               </div>
               <div className="col descriptionCol">
-              <span className="semicolons">"</span>
+              <span className="semicolons">" </span>
               <span>
-                with a civil engineering background, i bring an Engineering perspective to coding, from problem solving to logical thinking
+                 with a civil engineering background, i'm able to bring a logical perspective to coding, as well as problem solving and critical thinking
                 </span>
               <span className="semicolons">"</span>
               </div>

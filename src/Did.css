@@ -1,6 +1,6 @@
 .Did {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 80px;
 }
 
 .Did h2 {
@@ -42,4 +42,8 @@
   font-size: 22px;
   font-style: bold;
   color: #387098;
+}
+
+.Did .CardGroup {
+  margin: 0 auto;
 }

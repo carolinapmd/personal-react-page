@@ -1,5 +1,4 @@
 import React, {useState} from "react";
-import Fade from 'react-reveal/Fade';
 import "./ProfilePicture.css"
 import photo from "./img/photo.png"
 
@@ -22,7 +21,7 @@ export default function ProfilePicture(){
     if (hover) {
       return (
           <div className="ProfilePicture">
-                    <Fade>
+                    
               <div className="row photo">
                   <div className="col-7 profileText">
                       <br/>
@@ -34,7 +33,7 @@ export default function ProfilePicture(){
                     </div>
 
                 </div>
-                    </Fade>
+                   
             </div>
     )
     } 

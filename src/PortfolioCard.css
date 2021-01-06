@@ -1,9 +1,35 @@
 .PortfolioCard {
-  min-width: 300px;
+  width: 400px;
   margin: 5px;
   font-family: "Roboto Condensed", sans-serif;
+  padding: 0;
 }
 
 .PortfolioCard .card {
   background-color: rgba(255, 255, 255, 0.156);
+  max-width: 330px;
+  margin: 0 auto;
+}
+
+.PortfolioCard .card img {
+  width: 330px;
+  height: auto;
+  overflow: hidden;
+  border-radius: 0.25rem 0.25rem 0 0;
+}
+
+.PortfolioCard img:hover {
+  filter: blur(2px);
+}
+
+.PortfolioCard .date {
+  position: relative;
+}
+
+.PortfolioCard .card-title {
+  display: block;
+}
+
+.PortfolioCard .card-text {
+  height: 45px;
 }
