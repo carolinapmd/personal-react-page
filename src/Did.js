@@ -4,6 +4,12 @@ import React, {useState} from "react";
 import "./Did.css"
 import PortfolioCard from "./PortfolioCard";
 
+import moradia1 from "./img/moradia1.PNG"
+import moradia2 from "./img/moradia2.PNG"
+import moradia2rendered from "./img/moradia2rendered.jpg"
+import pavilhao from "./img/pavilhao.PNG"
+import paragem from "./img/paragem.JPG"
+import predio from "./img/predio.PNG"
 import workshop from "./img/workshop.PNG"
 import plusWireframe from "./img/plusWireframe.PNG"
 import plusWeatherApp from "./img/plusWeatherApp.PNG"
@@ -15,28 +21,43 @@ export default function Did(){
 
   const[civilClicked, setCivilClicked] = useState(false)
   
-  let civilPortfolio = [{
-    image: "image 0",
-    title: "title 0",
-    description: "description 0",
-    link: "link 0"
+  let civilPortfolio = [
+    {
+    image: moradia2rendered,
+    title: "3D home building",
+    description: "3D developed on SketchUp",
+    date: "aug 2019"
+  },
+    {
+    image: moradia2,
+    title: "3D home building",
+    description: "3D developed on SketchUp",
+    date: "jul 2019"
   },
   {
-    image: "image 1",
-    title: "title 1",
-    description: "description 1",
-    link: "description 1"
-  }, {
-    image: "image 2",
-    title: "title 2",
-    description: "description 2",
-    link: "description 2"
-  },{
-    image: "image 3",
-    title: "title 3",
-    description: "description 3",
-    link: "description 3"
-  }
+  image: moradia1,
+  title: "3D home building",
+  description: "3D developed on SketchUp",
+  date: "jul 2019"
+},
+{
+  image: paragem,
+  title: "3D bus stop",
+  description: "3D developed on SketchUp",
+  date: "jul 2019"
+},
+{
+  image: pavilhao,
+  title: "3D pavilion",
+  description: "3D developed on SketchUp",
+  date: "oct 2017"
+},
+{
+  image: predio,
+  title: "3D buildings",
+  description: "3D developed on SketchUp",
+  date: "aug 2019"
+}
 ]
 
 let devPortfolio = [{
@@ -97,7 +118,12 @@ let devPortfolio = [{
               <button className="active civilButton" onClick={showCivilPortfolio}>as a civil engineer</button> | <button className="devButton" onClick={showDevPortfolio}>as a developer</button>
               </span>
             <div className="CardGroup row">
-            <PortfolioCard data={civilPortfolio[0]}/>
+                    <PortfolioCard data={civilPortfolio[0]} role="civil"/>
+                    <PortfolioCard data={civilPortfolio[1]} role="civil" />
+                    <PortfolioCard data={civilPortfolio[2]} role="civil" />
+                    <PortfolioCard data={civilPortfolio[3]} role="civil" />
+                    <PortfolioCard data={civilPortfolio[4]} role="civil" />
+                    <PortfolioCard data={civilPortfolio[5]} role="civil" />
 
             </div>
         </div>
@@ -113,12 +139,12 @@ let devPortfolio = [{
                       <button className="civilButton" onClick={showCivilPortfolio}>as a civil engineer</button> | <button className="active devButton" onClick={showDevPortfolio}>as a developer</button>
                       </span>
                     <div className="CardGroup row">
-                    <PortfolioCard data={devPortfolio[0]}/>
-                    <PortfolioCard data={devPortfolio[1]}/>
-                    <PortfolioCard data={devPortfolio[2]}/>
-                    <PortfolioCard data={devPortfolio[3]}/>
-                    <PortfolioCard data={devPortfolio[4]}/>
-                    <PortfolioCard data={devPortfolio[5]}/>
+                    <PortfolioCard data={devPortfolio[0]} role="dev"/>
+                    <PortfolioCard data={devPortfolio[1]} role="dev"/>
+                    <PortfolioCard data={devPortfolio[2]} role="dev"/>
+                    <PortfolioCard data={devPortfolio[3]} role="dev"/>
+                    <PortfolioCard data={devPortfolio[4]} role="dev"/>
+                    <PortfolioCard data={devPortfolio[5]} role="dev"/>
                     </div>
                 </div>
                     
