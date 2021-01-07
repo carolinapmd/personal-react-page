@@ -1,14 +1,13 @@
 .ContactForm {
   min-width: 300px;
   max-width: 500px;
-  margin: 0 auto;
+  margin: 0 auto 100px;
   text-align: right;
 }
 
-.ContactForm h3 {
-  font-size: calc(5vw + 2vmin);
+.ContactForm span.colorActive {
+  color: #fffa67;
 }
-
 .ContactForm .emphasis:hover {
   color: #fffa67;
   transition: 600ms ease-in-out;

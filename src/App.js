@@ -15,13 +15,11 @@ import "aos/dist/aos.css"
 import { useEffect } from 'react';
 
 
-
-
-
 function App() {
 
 useEffect(() => {
-  Aos.init({ duration:2000});}, []);
+  Aos.init({ offset: 400,
+    duration:2000});}, []);
 
   return (
     <div className="App">
@@ -30,10 +28,7 @@ useEffect(() => {
        
           <div  className="container">
             <img className="headerImg" src={lineDot} alt="divider"/>
-            <h1>
-              hi, i'm <span data-text="carolina" className="name" >carolina</span>
-            </h1>
-            <div data-aos="fade-up">
+            <div >
             <ProfilePicture />
             </div>
 

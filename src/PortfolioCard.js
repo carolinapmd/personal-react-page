@@ -1,7 +1,17 @@
-import React from "react";
+import React, {useState} from "react";
 import "./PortfolioCard.css"
 
 export default function PortfolioCard(props){
+  const [hover, setHover]= useState(false)
+    
+       function handleHover() {
+            setHover(true);      
+        }
+       function handleLeave() {
+            setHover(false);      
+        }
+
+ 
 
   if(props.data.link !== undefined) {
 
@@ -10,8 +20,9 @@ export default function PortfolioCard(props){
       <div className="PortfolioCard col" >
       <div className="card" >
         <a href={props.data.link} target="_blank" rel="noreferrer">
-          <img src={props.data.image} alt={props.data.image}/>
+          <img src={props.data.image} alt={props.data.image} onMouseEnter={handleHover} onMouseLeave={handleLeave}/>
           </a>
+          <div className="more" style={{ visibility: hover ? "visible" : "hidden"}}>see more</div>
         <div className="card-body">
           <small className="date"> ▪ {props.data.date} ▪ </small>
           <h5 className="card-title">{props.data.title}</h5>
@@ -26,6 +37,7 @@ export default function PortfolioCard(props){
         <div className="card" >
          
             <img src={props.data.image} alt={props.data.image}/>
+            
             
           <div className="card-body">
             <small className="date"> ▪ {props.data.date} ▪ </small>

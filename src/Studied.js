@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import Caroussel from "./Caroussel"
 import line4Dot from "./img/line4Dot.png"
 
@@ -6,6 +6,12 @@ import line4Dot from "./img/line4Dot.png"
 import "./Studied.css"
 
 export default function Studied(){
+
+   const [hover, setHover]= useState(false)
+
+   function handleHover() {
+        setHover(true);      
+    }
 
   let One = (<div className="education">
     <p> <span className="educationDate">sep 2016</span> | <span className="educationLocation" >FCTUC</span></p>
@@ -49,11 +55,11 @@ export default function Studied(){
                       <img className="line4Dot" src={line4Dot} alt="divider"/>
           </div> 
             <h2 >
-            i studied <span className="this">this</span>            
+            i studied <span className={hover ? "this colorActive " : "this"} onMouseEnter={handleHover}>this</span>            
             </h2>
             <div className="row">
               <div className="col carousselCol">
-                <Caroussel slideOne={One} slideTwo={Two} slideThree={Three} slideFour={Four} slideFive={Five} slideSix="null" />
+                <Caroussel slideOne={One} slideTwo={Two} slideThree={Three} slideFour={Four} slideFive={Five}  />
               </div>
               <div className="col descriptionCol">
               <span className="semicolons">" </span>

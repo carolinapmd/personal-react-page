@@ -1,12 +1,18 @@
-import React from "react";
+import React, {useState} from "react";
 
 import "./Aspire.css"
 
 export default function Aspire(){
+   const [hover, setHover]= useState(false)
+
+   function handleHover() {
+        setHover(true);      
+    }
+
       return (  
         <div className="Aspire" >
             <h2  >
-            <small>and</small> i aspire to <span className="this">achieve</span>
+            <small>and</small> i aspire to <span className={hover ? "this colorActive " : "this"} onMouseEnter={handleHover}>achieve</span>
             </h2>
          <div className="statement">
            <p>

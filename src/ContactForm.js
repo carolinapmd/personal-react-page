@@ -4,12 +4,18 @@ import {db} from "./firebase"
 import "./ContactForm.css"
 
 export default function ContactForm(){
-
+    
     const [name, setName] = useState("")
     const [email, setEmail] = useState("")
     const [message, setMessage] = useState("")
-
+    
     const[loader, setLoader] = useState(false)
+    
+        const [hover, setHover]= useState(false)
+    
+       function handleHover() {
+            setHover(true);      
+        }
 
 
 function handleNameChange(event){
@@ -46,17 +52,18 @@ function handleResponse(){
 
 return (  
         <div className="ContactForm" >
-            <h3 className="contactMe">
-                say <span className="emphasis">
+            <h2 className="contactMe">
+                say <span className={hover ? "emphasis colorActive " : "emphasis"} onMouseEnter={handleHover}>
                     hello
                 </span>.
-            </h3>
+            </h2>
             <form className="form" onSubmit={handleSubmit}>
                 <input className="form-control nameInput" placeholder="(your full name)" value={name} onChange={handleNameChange} />
                 <input type="email" className="form-control emailInput" placeholder="(your email)" value={email} onChange={handleEmailChange} />
                 <textarea className="form-control messageInput" placeholder="(your message)" value={message} onChange={handleMessageChange}  rows="4"></textarea>
                 <button type="submit" className="btn btn-light" style={{ background: loader ? "none" : "#cecece"}}>send</button>
             </form>
+            
         </div>
             
   )

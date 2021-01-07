@@ -20,6 +20,11 @@ import wordpressWireframe from "./img/wordpressWireframe.PNG"
 export default function Did(){
 
   const[civilClicked, setCivilClicked] = useState(false)
+  const [hover, setHover]= useState(false)
+
+   function handleHover() {
+        setHover(true);      
+    }
   
   let civilPortfolio = [
     {
@@ -60,13 +65,29 @@ export default function Did(){
 }
 ]
 
-let devPortfolio = [{
-    image: workshop,
-    title: "SheCodes Workshop project",
-    description: "This was my first ever introduction to HTML/CSS/Javascript",
-    date: "aug 2020",
-    link: "https://s3.amazonaws.com/shecodesio-production/challenge_submissions/files/000/064/297/original/workshop_final_project.html?1596387671"
-  },{
+let devPortfolio = [
+  {
+    image: pageWireframe,
+    title: "Personal page wireframe",
+    description: "Wireframe developed for the present website",
+    date: "jan 2020",
+    link: "https://www.figma.com/file/Pvm3hOVN8qtmwDOhpHwzBB/Personal-page?node-id=3%3A2"
+  },
+  {
+    image: reactWeatherApp,
+    title: "React JS Weather App",
+    description: "Weather App developed for SheCodes React final project",
+    date: "nov 2020",
+    link: "https://ecstatic-sammet-fe081c.netlify.app/"
+  },
+  {
+    image: wordpressWireframe,
+    title: "Personal page wireframe",
+    description: "Wireframe developd for Marketing course",
+    date: "oct 2020",
+    link: "https://carolinadomingues510353.invisionapp.com/freehand/Pgina-Pessoal-fkSPJH8GK"
+  },
+  {
     image: plusWireframe,
     title: "Weather App Wireframe",
     description: "Wireframe developed for SheCodes Plus project",
@@ -78,24 +99,13 @@ let devPortfolio = [{
     description: "Weather App developed for SheCodes Plus final project",
     date: "sep 2020",
     link: "https://competent-noyce-f5f049.netlify.app/"
-  },{
-    image: wordpressWireframe,
-    title: "Personal page wireframe",
-    description: "Wireframe developd for Marketing course",
-    date: "oct 2020",
-    link: "https://carolinadomingues510353.invisionapp.com/freehand/Pgina-Pessoal-fkSPJH8GK"
-  },{
-    image: reactWeatherApp,
-    title: "React JS Weather App",
-    description: "Weather App developed for SheCodes React final project",
-    date: "nov 2020",
-    link: "https://ecstatic-sammet-fe081c.netlify.app/"
-  },{
-    image: pageWireframe,
-    title: "Personal page wireframe",
-    description: "Wireframe developed for the present website",
-    date: "jan 2020",
-    link: "https://www.figma.com/file/Pvm3hOVN8qtmwDOhpHwzBB/Personal-page?node-id=3%3A2"
+  },
+  {
+    image: workshop,
+    title: "SheCodes Workshop project",
+    description: "This was my first ever introduction to HTML/CSS/Javascript",
+    date: "aug 2020",
+    link: "https://s3.amazonaws.com/shecodesio-production/challenge_submissions/files/000/064/297/original/workshop_final_project.html?1596387671"
   },
 ]
   function showCivilPortfolio(event){
@@ -112,7 +122,7 @@ let devPortfolio = [{
     return (  
       <div className="Did" >
             <h2 >
-            i did <span className="this">this</span>
+            i did <span className={hover ? "this colorActive " : "this"} onMouseEnter={handleHover}>this</span>
             </h2>
             <span className="roleOption">
               <button className="active civilButton" onClick={showCivilPortfolio}>as a civil engineer</button> | <button className="devButton" onClick={showDevPortfolio}>as a developer</button>
@@ -133,7 +143,7 @@ let devPortfolio = [{
             return (  
               <div className="Did" >
                     <h2 >
-                    i did <span className="this">this</span>
+                    i did <span className={hover ? "this colorActive " : "this"} onMouseEnter={handleHover}>this</span>
                     </h2>
                     <span className="roleOption">
                       <button className="civilButton" onClick={showCivilPortfolio}>as a civil engineer</button> | <button className="active devButton" onClick={showDevPortfolio}>as a developer</button>

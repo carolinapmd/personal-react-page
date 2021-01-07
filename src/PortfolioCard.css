@@ -17,9 +17,21 @@
   overflow: hidden;
   border-radius: 0.25rem 0.25rem 0 0;
 }
+.PortfolioCard .more {
+  background: rgba(255, 255, 255, 0.392);
+  color: rgba(0, 0, 0, 0.748);
+  font-size: 15px;
+  padding: 5px 10px;
+
+  border-radius: 10px;
+
+  position: absolute;
+  top: 150px;
+  left: 127px;
+}
 
 .PortfolioCard img:hover {
-  filter: blur(2px);
+  filter: blur(1.5px);
 }
 
 .PortfolioCard .date {

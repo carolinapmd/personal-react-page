@@ -1,34 +1,32 @@
 .Aspire {
   text-align: center;
-  margin: 100px;
+  margin-top: 100px;
 }
 
-.Aspire h2 {
-  font-size: calc(6vw + 2vmin);
+.Aspire span.colorActive {
+  color: #31ae97;
 }
 
 .Aspire .this:hover {
   color: #31ae97;
   transition: 600ms ease-in-out;
-  position: relative;
   animation: text 3s 1;
 }
 .Aspire .emphasis:hover {
   color: #31ae97;
   transition: 600ms ease-in-out;
-  position: relative;
 }
 
 @keyframes text {
   0% {
     color: #282c34;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
   }
   30% {
-    letter-spacing: 4px;
+    letter-spacing: 3px;
   }
   85% {
-    letter-spacing: 3px;
+    letter-spacing: 2px;
   }
 }
 

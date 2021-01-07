@@ -3,19 +3,17 @@
   margin-top: 150px;
 }
 
-.Doing h2 {
-  font-size: calc(6vw + 2vmin);
+.Doing .Caroussel {
+  margin: 0 auto;
 }
 
-.Doing .Caroussel {
-  margin-right: 0;
-  margin-left: auto;
+.Doing span.colorActive {
+  color: #81ab4a;
 }
 
 .Doing .this:hover {
-  color: #6e9e31;
+  color: #81ab4a;
   transition: 600ms ease-in-out;
-  position: relative;
   animation: text 3s 1;
 }
 
@@ -61,15 +59,16 @@
   margin: 5px 0 30px 0;
 }
 
-.Doing .carousselCol {
-  min-width: 540px;
+.Doing img.OSPortfolio {
+  object-fit: cover;
+  overflow: hidden;
 }
 .Doing .descriptionCol {
   display: flex;
   align-items: center;
   justify-content: center;
 
-  font-size: 1.2vw;
+  font-size: 20px;
   text-align: center;
   font-style: italic;
   line-height: 2;
@@ -80,8 +79,9 @@
   font-family: "Times New Roman", Times, serif;
 }
 
-.Doing .DotGroup {
-  float: left;
+.Doing div.DotGroup {
+  margin: 150px auto 50px 0;
+  text-align: left;
 }
 
 .Doing .DotGroup canvas {

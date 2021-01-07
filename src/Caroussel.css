@@ -1,6 +1,5 @@
 .Caroussel {
-  width: 50%;
-  min-width: 500px;
+  max-width: 540px;
   font-family: "Roboto Condensed", sans-serif;
 }
 
@@ -9,22 +8,24 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
+  height: 285px;
   font-size: inherit;
   color: #fff;
   font-weight: 500;
-  height: 250px;
 }
 
 .number-slide1,
 .number-slide2,
 .number-slide3,
 .number-slide4,
-.number-slide5,
-.number-slide6 {
+.number-slide5 {
   background-color: rgba(255, 255, 255, 0.156);
   background-image: url("./img/Timeline.png");
   background-size: cover;
+}
+
+.keen-slider__slide {
+  max-width: 570px;
 }
 
 .navigation-wrapper {

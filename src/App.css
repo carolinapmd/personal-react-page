@@ -1,17 +1,14 @@
 .App {
   background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  color: white;
+  color: rgb(238, 238, 238);
   font-family: "Roboto", sans-serif;
 }
 .App .wrapper {
-  margin: 20px 50px;
+  margin: 0 50px 20px 50px;
   min-width: 620px;
 }
 
-.App div.container {
+.App .container {
   min-width: 620px;
 }
 
@@ -22,35 +19,19 @@
   top: 45px;
   margin: 0 auto;
 }
-icon {
-  width: 300px;
-}
 
-h1 {
+.App h1 {
   font-size: 7vw;
 }
-
-.name:hover {
-  color: rgb(255, 255, 109);
-  transition: 600ms ease-in-out;
-  position: relative;
-  animation: text 3s 1;
+.App h2 {
+  font-size: 6vw;
+}
+.App h3 {
+  font-size: 4vw;
 }
 
-@keyframes text {
-  0% {
-    color: #282c34;
-    letter-spacing: 8px;
-  }
-  30% {
-    letter-spacing: 15px;
-  }
-  85% {
-    letter-spacing: 8px;
-  }
-  100% {
-    letter-spacing: normal;
-  }
+icon {
+  width: 300px;
 }
 
 .App .coderNote {
@@ -63,7 +44,6 @@ h1 {
 }
 
 .App .updatedDate {
-  display: inline-block;
-  float: right;
+  text-align: right;
   font-size: 12px;
 }

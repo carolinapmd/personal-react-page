@@ -1,23 +1,22 @@
 .Studied {
   text-align: left;
-  margin-top: 80px;
+  margin-top: 200px;
 }
-
+.Studied .Caroussel {
+  margin: 0 auto;
+}
 .Studied .line4Dot {
-  width: calc(60% + 5vmin);
-  float: left;
-  margin: 0 auto 20px -8vw;
+  width: 100%;
+  margin: 0 auto 50px -20vw;
 }
 
-.Studied h2 {
-  font-size: calc(6vw + 2vmin);
-  clear: left;
+.Studied span.colorActive {
+  color: rgb(255, 109, 145);
 }
 
 .Studied .this:hover {
   color: rgb(255, 109, 145);
   transition: 600ms ease-in-out;
-  position: relative;
   animation: text 3s 1;
 }
 
