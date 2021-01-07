@@ -20,7 +20,8 @@ export default function PortfolioCard(props){
       <div className="PortfolioCard col" >
       <div className="card" >
         <a href={props.data.link} target="_blank" rel="noreferrer">
-          <img src={props.data.image} alt={props.data.image} onMouseEnter={handleHover} onMouseLeave={handleLeave}/>
+          <img src={props.data.image} alt={props.data.image} onMouseEnter={handleHover} onMouseLeave={handleLeave} style={{ filter: hover ? "blur(1.5px)" : "none"}} />
+          
           </a>
           <div className="more" style={{ visibility: hover ? "visible" : "hidden"}}>see more</div>
         <div className="card-body">

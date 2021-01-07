@@ -33,6 +33,12 @@ export default function Did(){
     description: "3D developed on SketchUp",
     date: "aug 2019"
   },
+  {
+    image: predio,
+    title: "3D buildings",
+    description: "3D developed on SketchUp",
+    date: "aug 2019"
+  },
     {
     image: moradia2,
     title: "3D home building",
@@ -57,12 +63,6 @@ export default function Did(){
   description: "3D developed on SketchUp",
   date: "oct 2017"
 },
-{
-  image: predio,
-  title: "3D buildings",
-  description: "3D developed on SketchUp",
-  date: "aug 2019"
-}
 ]
 
 let devPortfolio = [
@@ -70,7 +70,7 @@ let devPortfolio = [
     image: pageWireframe,
     title: "Personal page wireframe",
     description: "Wireframe developed for the present website",
-    date: "jan 2020",
+    date: "jan 2021",
     link: "https://www.figma.com/file/Pvm3hOVN8qtmwDOhpHwzBB/Personal-page?node-id=3%3A2"
   },
   {

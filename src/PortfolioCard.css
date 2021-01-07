@@ -30,9 +30,6 @@
   left: 127px;
 }
 
-.PortfolioCard img:hover {
-  filter: blur(1.5px);
-}
 
 .PortfolioCard .date {
   position: relative;

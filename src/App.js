@@ -59,7 +59,7 @@ useEffect(() => {
                               </div>
               <div className="col">
             <p className="updatedDate">
-             ◽ January 2020 ◽ 
+             ◽ January 2021 ◽ 
             </p>
 
               </div>
