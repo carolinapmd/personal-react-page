@@ -1,5 +1,7 @@
 .Caroussel {
+  width: 90%;
   max-width: 540px;
+
   font-family: "Roboto Condensed", sans-serif;
 }
 

@@ -20,12 +20,19 @@ import wordpressWireframe from "./img/wordpressWireframe.PNG"
 export default function Did(){
 
   const[civilClicked, setCivilClicked] = useState(false)
-  const [hover, setHover]= useState(false)
 
-   function handleHover() {
-        setHover(true);      
+     const [scroll, setScroll]= useState(false)
+
+   function handleScroll() {
+     if (window.scrollY >= 1400) {
+       setScroll(true);      
+     }else {
+       setScroll(false)
+     }
     }
-  
+
+window.addEventListener("scroll", handleScroll);
+
   let civilPortfolio = [
     {
     image: moradia2rendered,
@@ -122,7 +129,7 @@ let devPortfolio = [
     return (  
       <div className="Did" >
             <h2 >
-            i did <span className={hover ? "this colorActive " : "this"} onMouseEnter={handleHover}>this</span>
+            i did <span className={scroll ? "this colorActive " : "this"} >this</span>
             </h2>
             <span className="roleOption">
               <button className="active civilButton" onClick={showCivilPortfolio}>as a civil engineer</button> | <button className="devButton" onClick={showDevPortfolio}>as a developer</button>
@@ -143,7 +150,7 @@ let devPortfolio = [
             return (  
               <div className="Did" >
                     <h2 >
-                    i did <span className={hover ? "this colorActive " : "this"} onMouseEnter={handleHover}>this</span>
+                    i did <span className={scroll ? "this colorActive " : "this"} >this</span>
                     </h2>
                     <span className="roleOption">
                       <button className="civilButton" onClick={showCivilPortfolio}>as a civil engineer</button> | <button className="active devButton" onClick={showDevPortfolio}>as a developer</button>

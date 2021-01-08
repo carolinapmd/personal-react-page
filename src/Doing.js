@@ -14,11 +14,18 @@ import saveLogic from "./img/saveLogic.PNG"
 import "./Doing.css"
 
 export default function Doing(){
-   const [hover, setHover]= useState(false)
 
-   function handleHover() {
-        setHover(true);      
+  const [scroll, setScroll]= useState(false)
+
+   function handleScroll() {
+     if (window.scrollY >= 2800) {
+       setScroll(true);      
+     }else {
+       setScroll(false)
+     }
     }
+window.addEventListener("scroll", handleScroll);
+
   
   let One = (
   <div>
@@ -59,7 +66,7 @@ export default function Doing(){
 
           </div>
             <h2 >
-            i'm doing <span className={hover ? "this colorActive " : "this"} onMouseEnter={handleHover}>this</span>
+            i'm doing <span className={scroll ? "this colorActive " : "this"}>this</span>
             </h2>
             <div className="row">
               <div className="col descriptionCol">

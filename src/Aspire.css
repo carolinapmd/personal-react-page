@@ -5,10 +5,6 @@
 
 .Aspire span.colorActive {
   color: #31ae97;
-}
-
-.Aspire .this:hover {
-  color: #31ae97;
   transition: 600ms ease-in-out;
   animation: text 3s 1;
 }
@@ -19,7 +15,6 @@
 
 @keyframes text {
   0% {
-    color: #282c34;
     letter-spacing: 2px;
   }
   30% {

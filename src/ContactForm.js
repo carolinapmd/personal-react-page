@@ -11,11 +11,17 @@ export default function ContactForm(){
     
     const[loader, setLoader] = useState(false)
     
-        const [hover, setHover]= useState(false)
-    
-       function handleHover() {
-            setHover(true);      
-        }
+    const [scroll, setScroll]= useState(false)
+
+   function handleScroll() {
+     if (window.scrollY >= 4000) {
+       setScroll(true);      
+     }else {
+       setScroll(false)
+     }
+    }
+window.addEventListener("scroll", handleScroll);
+
 
 
 function handleNameChange(event){
@@ -53,7 +59,7 @@ function handleResponse(){
 return (  
         <div className="ContactForm" >
             <h2 className="contactMe">
-                say <span className={hover ? "emphasis colorActive " : "emphasis"} onMouseEnter={handleHover}>
+                say <span className={scroll ? "emphasis colorActive " : "emphasis"} >
                     hello
                 </span>.
             </h2>

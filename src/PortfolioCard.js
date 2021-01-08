@@ -37,9 +37,9 @@ export default function PortfolioCard(props){
 } else {
   return (  
     <div className="PortfolioCard col" >
-        <div className="card" >
+        <div className="card" style="width: 18rem;">
          
-            <img src={props.data.image} alt={props.data.image}/>
+            <img className="card-img-top" src={props.data.image} alt={props.data.image}/>
             
             
           <div className="card-body">

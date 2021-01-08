@@ -1,5 +1,4 @@
 .PortfolioCard {
-  width: 400px;
   margin: 5px;
   font-family: "Roboto Condensed", sans-serif;
   padding: 0;
@@ -8,16 +7,15 @@
 .PortfolioCard .card {
   background-color: rgba(255, 255, 255, 0.156);
   max-width: 330px;
-  margin: 0 auto;
+  margin: 0 auto 10px;
 }
 
 .PortfolioCard .card img {
-  width: 330px;
-  height: auto;
-  overflow: hidden;
   border-radius: 0.25rem 0.25rem 0 0;
   transition: all 0.3s ease-out;
+  max-width: 330px;
 }
+
 .PortfolioCard .more {
   background: rgba(255, 255, 255, 0.619);
   color: rgba(0, 0, 0, 0.748);

@@ -7,11 +7,17 @@ import "./Studied.css"
 
 export default function Studied(){
 
-   const [hover, setHover]= useState(false)
+   const [scroll, setScroll]= useState(false)
 
-   function handleHover() {
-        setHover(true);      
+   function handleScroll() {
+     if (window.scrollY >= 800) {
+       setScroll(true);      
+     }else {
+       setScroll(false)
+     }
     }
+
+window.addEventListener("scroll", handleScroll);
 
   let One = (
   <div className="education">
@@ -61,7 +67,7 @@ export default function Studied(){
                       <img className="line4Dot" src={line4Dot} alt="divider"/>
           </div> 
             <h2 >
-            i studied <span className={hover ? "this colorActive " : "this"} onMouseEnter={handleHover}>this</span>            
+            i studied <span className={scroll ? "this colorActive " : "this"} >this</span>            
             </h2>
             <div className="row">
               <div className="col carousselCol">
