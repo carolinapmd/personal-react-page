@@ -19,7 +19,7 @@ function App() {
 
 useEffect(() => {
   Aos.init({ offset: 400,
-    duration:2000});}, []);
+    duration:1000});}, []);
 
   return (
     <div className="App">

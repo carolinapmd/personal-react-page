@@ -16,9 +16,10 @@
   height: auto;
   overflow: hidden;
   border-radius: 0.25rem 0.25rem 0 0;
+  transition: all 0.3s ease-out;
 }
 .PortfolioCard .more {
-  background: rgba(255, 255, 255, 0.392);
+  background: rgba(255, 255, 255, 0.619);
   color: rgba(0, 0, 0, 0.748);
   font-size: 15px;
   padding: 5px 10px;
@@ -29,7 +30,6 @@
   top: 150px;
   left: 127px;
 }
-
 
 .PortfolioCard .date {
   position: relative;

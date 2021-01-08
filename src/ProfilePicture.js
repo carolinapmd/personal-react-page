@@ -28,36 +28,26 @@ export default function ProfilePicture(){
   
     
 
-    if (hover) {
+  
       return (
           <div className="ProfilePicture ">
               <h1>
                   hi, i'm <span data-text="carolina" className={hover ? "name colorActive " : "name"} >carolina</span>
                   </h1>
+                <h2 onMouseEnter={showPhoto}  onMouseLeave={hidePhoto}>
+                    this is <span className="me">me</span>
+                </h2>
                 <div className="row photo" >
                     <div data-aos="fade-right"  className="col-7 profileText">
                         <br/>
                         <p  className="description">aspiring <span>designer | front-end developer</span>, from Castelo Branco, Portugal.</p>
                     </div>
                     <div data-aos="fade-left"  className="col-5">
-                        <img src={photo} alt="carolina" onMouseLeave={hidePhoto}/>
+                        <img src={photo} alt="carolina"/>
                     </div>
                 </div>
             </div>
     )
-    } 
     
-    else {
-        return(
-            <div className="ProfilePicture" >
-                <h1>
-                 hi, i'm <span data-text="carolina" className={hover ? "name colorActive " : "name"} >carolina</span>
-                </h1>
-                <h2 onMouseEnter={showPhoto} >
-                    this is <span className="me">me</span>
-                </h2>
-            </div>
-        )
 
-    }
 }

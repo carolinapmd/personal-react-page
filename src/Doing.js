@@ -1,4 +1,6 @@
 import React, {useState}  from "react";
+import 'react-inner-image-zoom/lib/InnerImageZoom/styles.css'
+import InnerImageZoom from 'react-inner-image-zoom'
 
 import Caroussel from "./Caroussel";
 import Dot from "./img/Dot.png"
@@ -20,29 +22,29 @@ export default function Doing(){
   
   let One = (
   <div>
-    <img src={login} alt="login" className="OSPortfolio"/>
+    <InnerImageZoom src={login} alt="login" className="OSPortfolio" />
    
   </div>
   )
 
   let Two = (
   <div>
-    <img src={telaMenu} alt="login" className="OSPortfolio"/>
+     <InnerImageZoom src={telaMenu} alt="login" className="OSPortfolio"/>
   </div>
   )
   let Three = (
   <div>
-    <img src={telaOrder} alt="login" className="OSPortfolio"/>
+    <InnerImageZoom src={telaOrder} alt="login" className="OSPortfolio"/>
   </div>
   )
   let Four = (
   <div>
-    <img src={saveLogic} alt="login" className="OSPortfolio"/>
+     <InnerImageZoom src={saveLogic} alt="login" className="OSPortfolio"/>
   </div>
   )
   let Five = (
   <div>
-    <img src={modelo} alt="login" className="OSPortfolio"/>
+     <InnerImageZoom  src={modelo} alt="login" className="OSPortfolio"/>
   </div>
   )
  
