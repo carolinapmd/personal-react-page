@@ -10,11 +10,10 @@
   text-align: right;
 }
 
-.ProfilePicture span.colorActive {
-  color: rgb(255, 255, 109);
+.ProfilePicture .me {
+  color: rgb(255, 198, 112);
 }
-
-.ProfilePicture .name:hover {
+.ProfilePicture span.colorActive {
   color: rgb(255, 255, 109);
   transition-delay: 200ms;
   transition: 600ms ease-in-out;
@@ -23,7 +22,6 @@
 
 @keyframes text {
   0% {
-    color: #282c34;
     letter-spacing: 8px;
   }
   30% {

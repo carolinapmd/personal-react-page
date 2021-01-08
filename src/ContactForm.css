@@ -7,10 +7,20 @@
 
 .ContactForm span.colorActive {
   color: #fffa67;
-}
-.ContactForm .emphasis:hover {
-  color: #fffa67;
   transition: 600ms ease-in-out;
+  animation: text 3s 1;
+}
+
+@keyframes text {
+  0% {
+    letter-spacing: 3px;
+  }
+  30% {
+    letter-spacing: 8px;
+  }
+  85% {
+    letter-spacing: 3px;
+  }
 }
 
 .ContactForm .form .nameInput,

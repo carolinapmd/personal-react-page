@@ -10,31 +10,33 @@ import { useEffect } from 'react';
 
 
 export default function ProfilePicture(){
-    const [hover, setHover]= useState(false)
+    const [scroll, setScroll]= useState(false)
+
+   function handleScroll() {
+     if (window.scrollY >= 10) {
+       setScroll(true);      
+     }else {
+       setScroll(false)
+     }
+    }
+    
+    window.addEventListener("scroll", handleScroll);
+
     
     useEffect(() => {
       Aos.init({
         duration:1000});}, []);
 
-    function showPhoto() {
-        setHover(true);
-      
-    }
-
-    function hidePhoto() {
-        
-        setHover(false)
-    }
-  
+   
     
 
   
       return (
           <div className="ProfilePicture ">
               <h1>
-                  hi, i'm <span data-text="carolina" className={hover ? "name colorActive " : "name"} >carolina</span>
+                  hi, i'm <span data-text="carolina" className={scroll ? "name colorActive " : "name"} >carolina</span>
                   </h1>
-                <h2 onMouseEnter={showPhoto}  onMouseLeave={hidePhoto}>
+                <h2 >
                     this is <span className="me">me</span>
                 </h2>
                 <div className="row photo" >
