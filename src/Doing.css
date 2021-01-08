@@ -63,6 +63,9 @@
   object-fit: cover;
   overflow: hidden;
 }
+.Doing .carousselCol {
+  min-width: 540px;
+}
 .Doing .descriptionCol {
   display: flex;
   align-items: center;
